@@ -18,6 +18,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+&mt {
+  tapping-term-ms = <400>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -30,10 +34,6 @@
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
-    };
-
-    &mt {
-      tapping-term-ms = <400>;
     };
   };
 
